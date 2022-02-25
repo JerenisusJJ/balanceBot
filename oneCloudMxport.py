@@ -1,13 +1,13 @@
 import requests
 import json
 from requests.structures import CaseInsensitiveDict
-from config import tokenInter
+from config import tokenMx
 
 url = "https://api.1cloud.ru/account"
 
 headers = CaseInsensitiveDict()
 headers["Content-Type"] = "application/json"
-headers["Authorization"] = tokenInter
+headers["Authorization"] = tokenMx
 
 
 resp = requests.get(url, headers=headers)
