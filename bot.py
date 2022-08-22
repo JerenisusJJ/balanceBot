@@ -38,6 +38,7 @@ def balance(message):
         bot.send_message(message.chat.id, 'Не дозволено')
     else:
         bot.send_message(message.chat.id, updateTableInfo.updateTableInfo())
+        print(message.chat.username)
 
 
 bot.polling(none_stop=True)
